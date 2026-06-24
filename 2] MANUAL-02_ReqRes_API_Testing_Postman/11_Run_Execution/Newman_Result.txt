@@ -1,0 +1,83 @@
+newman
+
+ReqRes API Testing
+
+□ 1.Authentication / Login
+└ 1.Login
+  POST https://reqres.in/api/login [200 OK, 2.38kB, 330ms]
+  √  Status code is 200
+  √  Response time less than 2000 ms
+  √  Token should be present
+
+□ 2.Users / Get Users
+└ 1.get the Users
+  GET https://reqres.in/api/users?page=2 [200 OK, 3.62kB, 40ms]
+  √  Status Code is 200
+  √  Response time less than 2000 ms
+  √  Page number exists
+  √  Users list exists
+  √  Users list is not empty
+  √  Response is JSON
+
+□ 2.Users / Get Single User
+└ get single user
+  GET https://reqres.in/api/users/2 [200 OK, 2.86kB, 21ms]
+  √  Status Code is 200
+  √  Response time less than 2000 ms
+  √  User ID exists
+  √  User ID is 2
+  √  Email exists
+  √  First Name exists
+  √  Response is JSON
+
+□ 3.Create User / Create User
+└ 1.create user
+  POST https://reqres.in/api/users [201 Created, 2.51kB, 933ms]
+  √  Status Code is 201
+  √  Response time less than 2000 ms
+  √  Name is correct
+  √  Job is correct
+  √  ID generated
+  √  CreatedAt generated
+
+□ 4.Update User / PUT Update User
+└ Update User (PUT)
+  PUT https://reqres.in/api/users/2 [200 OK, 2.53kB, 231ms]
+  √  Status Code is 200
+  √  Name updated correctly
+  √  Job updated correctly
+  √  updatedAt exists
+
+□ 4.Update User / PATCH Update User
+└ Update User (PATCH)
+  PATCH https://reqres.in/api/users/2 [200 OK, 2.49kB, 232ms]
+  √  Status Code is 200
+  √  Job updated correctly
+  √  updatedAt exists
+
+□ 5.Delete User
+└ 1.Delete User
+  DELETE https://reqres.in/api/users/2?= [204 No Content, 1.93kB, 244ms]
+  √  Status Code is 204
+  √  Response body is empty
+  √  Response time less than 2000 ms
+
+┌─────────────────────────┬────────────────────┬────────────────────┐
+│                         │           executed │             failed │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              iterations │                  1 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│                requests │                  7 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│            test-scripts │                  7 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│      prerequest-scripts │                  0 │                  0 │
+├─────────────────────────┼────────────────────┼────────────────────┤
+│              assertions │                 32 │                  0 │
+├─────────────────────────┴────────────────────┴────────────────────┤
+│ total run duration: 2.8s                                          │
+├───────────────────────────────────────────────────────────────────┤
+│ total data received: 4.2kB (approx)                               │
+├───────────────────────────────────────────────────────────────────┤
+│ average response time: 290ms [min: 21ms, max: 933ms, s.d.: 282ms] │
+└───────────────────────────────────────────────────────────────────┘
