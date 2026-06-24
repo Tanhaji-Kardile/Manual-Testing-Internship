@@ -36,8 +36,21 @@ This repository contains all Manual Testing projects completed as part of a QA T
 * Response Time Analysis
 * Performance Reporting
 
+## Repository Structure
+```text
+Manual-Testing-Internship
+│
+├── MANUAL-01-OrangeHRM-Login-Navigation-Testing
+│
+├── MANUAL-02-ReqRes_API_Testing_Postman
+│
+├── MANUAL-03-OWASP-Juice-Shop-Security-Testing-Docker
+│
+├── MANUAL-04-BlazeDemoFlightBooking_LoadTesting_Gatling
+│
+└── README.md
+```
 ## Tools Used
-
 * Jira
 * Postman
 * OWASP Juice Shop
