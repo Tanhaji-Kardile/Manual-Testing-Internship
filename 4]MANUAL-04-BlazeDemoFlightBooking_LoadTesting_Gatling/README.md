@@ -126,7 +126,7 @@ The test execution provided detailed insights into:
 ## Project Structure
 
 ```text
-MANUAL-04-BlazeDemoFlightBooking_LoadTesting_Gatling
+Task-04-BlazeDemoFlightBooking_LoadTesting_Gatling
 │
 ├── 01_Project_Introduction
 │
