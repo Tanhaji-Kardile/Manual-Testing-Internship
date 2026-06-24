@@ -28,6 +28,7 @@ Test Scenarios Covered:
 
 Project Structure:
 
+```text
 MANUAL-01-OrangeHRM-Login-Navigation-Testing
 │
 ├── 01_Project_Introduction
@@ -96,6 +97,8 @@ MANUAL-01-OrangeHRM-Login-Navigation-Testing
 ├── README.md
 ├── pom.xml
 └── testng.xml
+
+```
 
 # Conclusion:
 
